@@ -43,7 +43,10 @@
       <div>
         <h3 class="font-serif text-lg mb-3 text-white">{$_('footer.contact')}</h3>
         <p class="text-earth-300 text-sm mb-4">
-          <a href="mailto:bjorn.kenneth.holmstrom@gmail.com" class="hover:text-moss-300 transition-colors">
+          <a 
+            href="mailto:bjorn.kenneth.holmstrom@gmail.com"
+            class="hover:text-moss-300 transition-colors"
+          >
             bjorn.kenneth.holmstrom@gmail.com
           </a>
         </p>

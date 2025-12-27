@@ -6,6 +6,7 @@
     "scales": "Scales",
     "toolkit": "Toolkit",
     "library": "Library",
+    "bioregions": "Bioregions",
     "knowledge": "Knowledge",
     "about": "About",
     "support": "Support"
@@ -20,6 +21,32 @@
     "title": "From Isolation to Communion",
     "subtitle": "Exploring the process of communizing—building community and creating the commons",
     "cta": "Begin Exploring"
+  },
+  "pathways": {
+    "title": "Choose your pathway",
+    "subtitle": "Whether you need practical tools or want to understand the complete system, there's a path for you.",
+    "practical": {
+      "title": "I need practical tools",
+      "description": "Jump straight to templates, worksheets, and concrete resources for building community in your context.",
+      "features": [
+        "Agreement templates ready to use",
+        "Resource mapping tools",
+        "Decision-making frameworks",
+        "Curated directory of platforms"
+      ],
+      "cta": "Go to toolkit"
+    },
+    "systems": {
+      "title": "Show me the whole system",
+      "description": "Explore how the same patterns of communizing appear at every scale—from inner work to planetary coordination.",
+      "features": [
+        "The fractal nature of belonging",
+        "Four interconnected scales",
+        "Theory meets practice",
+        "Complete systems view"
+      ],
+      "cta": "Explore the scales"
+    }
   },
   "manifesto": {
     "quote": "We live in an age of profound isolation—despite being more \"connected\" than ever. Communize is an invitation to participate in the great work of our time: weaving the social fabric back together.",

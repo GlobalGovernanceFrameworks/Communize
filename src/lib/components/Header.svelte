@@ -43,6 +43,12 @@
         <a href="{base}/knowledge" class="text-earth-700 hover:text-moss-600 font-medium">
           {$_('nav.knowledge')}
         </a>
+        <a href="{base}/bioregions" class="relative text-earth-700 hover:text-moss-600 font-medium">
+          {$_('nav.bioregions')}
+          <span class="absolute -top-2 -right-3 px-1.5 py-0.5 bg-moss-600 text-white text-xs rounded-full font-semibold">
+            New
+          </span>
+        </a>
         <a href="{base}/about" class="text-earth-700 hover:text-moss-600 font-medium">
           {$_('nav.about')}
         </a>
@@ -91,6 +97,10 @@
           </a>
           <a href="{base}/knowledge" class="text-earth-700 hover:text-moss-600 font-medium py-2">
             {$_('nav.knowledge')}
+          </a>
+          <a href="{base}/bioregions" class="text-earth-700 hover:text-moss-600 font-medium py-2 flex items-center gap-2">
+            {$_('nav.bioregions')}
+            <span class="px-2 py-0.5 bg-moss-600 text-white text-xs rounded-full font-semibold">New</span>
           </a>
           <a href="{base}/about" class="text-earth-700 hover:text-moss-600 font-medium py-2">
             {$_('nav.about')}

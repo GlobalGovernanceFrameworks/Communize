@@ -7,6 +7,7 @@
     "toolkit": "Verktygslåda",
     "library": "Bibliotek",
     "knowledge": "Kunskap",
+    "bioregions": "Bioregioner",
     "about": "Om",
     "support": "Stöd"
   },
@@ -21,9 +22,35 @@
     "subtitle": "Att utforska processen av att kommunisera—att bygga gemenskap och skapa allmänningar",
     "cta": "Börja utforska"
   },
+  "pathways": {
+    "title": "Välj din väg",
+    "subtitle": "Oavsett om du behöver praktiska verktyg eller vill förstå hela systemet, finns det en väg för dig.",
+    "practical": {
+      "title": "Jag behöver praktiska verktyg",
+      "description": "Hoppa direkt till mallar, arbetsblad och konkreta resurser för att bygga gemenskap i ditt sammanhang.",
+      "features": [
+        "Avtalsmallar redo att använda",
+        "Resurskarteringsverktyg",
+        "Beslutsfattande ramverk",
+        "Kurerad katalog av plattformar"
+      ],
+      "cta": "Gå till verktygslådan"
+    },
+    "systems": {
+      "title": "Visa mig hela systemet",
+      "description": "Utforska hur samma mönster av kommunisering uppträder på varje skala—från inre arbete till planetär samordning.",
+      "features": [
+        "Tillhörighetens fraktala natur",
+        "Fyra sammanlänkade skalor",
+        "Teori möter praktik",
+        "Komplett systemvy"
+      ],
+      "cta": "Utforska skalorna"
+    }
+  },
   "manifesto": {
     "quote": "Vi lever i en tid av djup isolering—trots att vi är mer \"uppkopplade\" än någonsin. Communize är en inbjudan att delta i vår tids stora verk: att väva samman det sociala tyget igen.",
-    "body": "Detta är ett upprop att röra oss från en värld av \"jag\" till en värld av \"vi\"—inte genom att förlora jaget, utan genom att finna det i ett vidare sammanhang av tillhörighet och ömsesidig omsorg. Det är både uråldrig visdom och brådskande nödvändighet: insikten att vi blomstrar tillsammans, eller inte alls."
+    "body": "Detta är ett upprop att röra oss från en värld av \"jag\" till en värld av \"vi\"—inte genom att förlora jaget, utan genom att finna det i ett vidare sammanhang av tillhörighet och ömsesidig omsorg. Det är både uråldig visdom och brådskande nödvändighet: insikten att vi blomstrar tillsammans, eller inte alls."
   },
   "scalesSection": {
     "title": "De fyra skalorna av kommunisering",

@@ -12,8 +12,14 @@
       title: "The Four Scales of Communizing",
       subtitle: "From inner integration to planetary stewardship",
       intro: "Communizing happens at every scale of existence—from the relationship we have with ourselves, to our intimate bonds, to our local communities, to our shared planet. Each scale mirrors the others, yet each has its own unique patterns and practices.",
+      howToUse: {
+        title: "How to use this guide",
+        practical: "Looking for practical community building? **Start with Societal Commons** for concrete tools and structures.",
+        advanced: "Interested in the full fractal view? **Explore all four scales** to see how the same patterns appear everywhere.",
+        inner: "The Inner Commons scale is optional—it's for those interested in how these patterns begin within ourselves."
+      },
       principle: {
-        title: "The Fractal Principle",
+        title: "The fractal principle",
         text: "Like a fractal, the same fundamental patterns of communizing appear at every scale: creating shared spaces, building trust, establishing agreements, navigating conflict, and evolving together. What changes is the context, complexity, and number of participants—but the core dynamics of belonging remain constant."
       },
       scales: [
@@ -21,7 +27,9 @@
           id: "inner",
           title: "Inner Commons",
           icon: "🪞",
-          subtitle: "The Community Within",
+          badge: "Advanced/Optional",
+          badgeColor: "bg-earth-100 text-earth-700",
+          subtitle: "The community within",
           description: "How do we communize our own consciousness? This scale explores the inner landscape—our relationship with our own parts, emotions, and thoughts. Drawing from Internal Family Systems, shadow work, and contemplative traditions, we investigate how integration within mirrors integration without.",
           themes: [
             "Self-compassion as self-commoning",
@@ -35,7 +43,7 @@
         {
           id: "relational",
           title: "Relational Commons",
-          subtitle: "The Space Between",
+          subtitle: "The space between",
           icon: "💞",
           description: "Two-person and small-group communizing—how relationships themselves become shared fields. From partnerships and families to close friendships, this scale explores how we create 'we-space' while honoring individual autonomy. It's the practice ground for all larger-scale communizing.",
           themes: [
@@ -50,8 +58,10 @@
         {
           id: "societal",
           title: "Societal Commons",
-          subtitle: "Communities & Cooperatives",
+          subtitle: "Communities & cooperatives",
           icon: "🏘️",
+          badge: "Most Practical",
+          badgeColor: "bg-moss-100 text-moss-700",
           description: "This is where most people think 'commons' begins—neighborhoods, co-ops, ecovillages, and local economies. Here we find concrete structures: legal agreements, decision-making processes, shared resources, and governance patterns. It's the scale of visible, tangible communizing.",
           themes: [
             "From property to stewardship",
@@ -65,7 +75,7 @@
         {
           id: "planetary",
           title: "Planetary Commons",
-          subtitle: "Global & Digital",
+          subtitle: "Global & digital",
           icon: "🌍",
           description: "The biosphere, the internet, the atmosphere—resources that belong to no one and everyone. This scale explores how we govern what transcends borders: climate, oceans, knowledge, and digital space. It requires new forms of coordination that honor both local autonomy and planetary interdependence.",
           themes: [
@@ -79,11 +89,11 @@
         }
       ],
       integration: {
-        title: "Integration Across Scales",
+        title: "Integration across scales",
         text: "These scales are not separate—they interpenetrate. How we relate to ourselves shapes how we relate to others. Local practices inform global patterns. Digital tools enable new forms of local collaboration. Understanding all four scales helps us see the complete ecology of belonging."
       },
       cta: {
-        title: "Explore Each Scale",
+        title: "Explore each scale",
         text: "Dive deeper into any scale to discover essays, practices, and examples of communizing in action."
       }
     },
@@ -91,6 +101,12 @@
       title: "De fyra skalorna av kommunisering",
       subtitle: "Från inre integration till planetärt förvaltarskap",
       intro: "Kommunisering sker på varje nivå av existens—från förhållandet vi har med oss själva, till våra intima band, till våra lokala gemenskaper, till vår delade planet. Varje skala speglar de andra, men varje har sina egna unika mönster och praktiker.",
+      howToUse: {
+        title: "Hur man använder denna guide",
+        practical: "Letar du efter praktisk gemenskapsbyggande? **Börja med samhälleliga allmänningar** för konkreta verktyg och strukturer.",
+        advanced: "Intresserad av den fullständiga fraktala vyn? **Utforska alla fyra skalorna** för att se hur samma mönster uppträder överallt.",
+        inner: "Skalan för inre allmänningar är valfri—den är för dem som är intresserade av hur dessa mönster börjar inom oss själva."
+      },
       principle: {
         title: "Den fraktala principen",
         text: "Som en fraktal uppträder samma grundläggande mönster av kommunisering på varje skala: skapa delade utrymmen, bygga förtroende, etablera överenskommelser, navigera konflikter och utvecklas tillsammans. Det som ändras är kontexten, komplexiteten och antalet deltagare—men kärndynamiken av tillhörighet förblir konstant."
@@ -100,6 +116,8 @@
           id: "inner",
           title: "Inre allmänningar",
           icon: "🪞",
+          badge: "Avancerat/valfritt",
+          badgeColor: "bg-earth-100 text-earth-700",
           subtitle: "Gemenskapen inom",
           description: "Hur kommuniserar vi vårt eget medvetande? Denna skala utforskar det inre landskapet—vårt förhållande till våra egna delar, känslor och tankar. Med utgångspunkt i Internal Family Systems, skuggarbete och kontemplativa traditioner undersöker vi hur integration inom speglar integration utan.",
           themes: [
@@ -131,6 +149,8 @@
           title: "Samhälleliga allmänningar",
           subtitle: "Gemenskaper och kooperativ",
           icon: "🏘️",
+          badge: "Mest praktisk",
+          badgeColor: "bg-moss-100 text-moss-700",
           description: "Det är här de flesta tänker att 'allmänningar' börjar—grannskaper, kooperativ, ekobyar och lokala ekonomier. Här finner vi konkreta strukturer: juridiska avtal, beslutsprocesser, delade resurser och styrningsmodeller. Det är skalan av synlig, påtaglig kommunisering.",
           themes: [
             "Från egendom till förvaltarskap",
@@ -196,8 +216,20 @@
       </p>
     </div>
 
+    <!-- How to Use This Guide - NEW -->
+    <div class="mb-12 p-8 bg-gradient-to-br from-moss-50 to-earth-50 rounded-xl max-w-4xl mx-auto border-2 border-moss-200">
+      <h2 class="text-2xl font-serif mb-4 text-earth-900">
+        {t.howToUse.title}
+      </h2>
+      <div class="space-y-3 text-earth-700">
+        <p><strong class="text-moss-700">{@html t.howToUse.practical.split('**')[1]}</strong> {t.howToUse.practical.split('**')[2]}</p>
+        <p><strong class="text-earth-700">{@html t.howToUse.advanced.split('**')[1]}</strong> {t.howToUse.advanced.split('**')[2]}</p>
+        <p class="text-sm italic text-earth-600 pt-2 border-t border-earth-200">{t.howToUse.inner}</p>
+      </div>
+    </div>
+
     <!-- Fractal Principle -->
-    <div class="mb-16 p-8 bg-gradient-to-br from-moss-50 to-earth-50 rounded-xl max-w-4xl mx-auto">
+    <div class="mb-16 p-8 bg-earth-50 rounded-xl max-w-4xl mx-auto border border-earth-200">
       <h2 class="text-2xl font-serif mb-4 text-earth-900">
         {t.principle.title}
       </h2>
@@ -219,9 +251,16 @@
                 {scale.icon}
               </div>
               <div class="flex-1">
-                <h3 class="text-2xl font-serif text-earth-900 mb-1 group-hover:text-moss-700 transition-colors">
-                  {scale.title}
-                </h3>
+                <div class="flex items-center gap-3 mb-2">
+                  <h3 class="text-2xl font-serif text-earth-900 group-hover:text-moss-700 transition-colors">
+                    {scale.title}
+                  </h3>
+                  {#if scale.badge}
+                    <span class="px-3 py-1 {scale.badgeColor} rounded-full text-xs font-medium">
+                      {scale.badge}
+                    </span>
+                  {/if}
+                </div>
                 <p class="text-sm text-earth-600 mb-3 font-medium">
                   {scale.subtitle}
                 </p>
@@ -229,7 +268,7 @@
                   {scale.description}
                 </p>
                 <div class="space-y-1.5">
-                  <p class="text-sm font-medium text-earth-600 mb-2">Key Themes:</p>
+                  <p class="text-sm font-medium text-earth-600 mb-2">Key themes:</p>
                   {#each scale.themes as theme}
                     <div class="flex items-start text-earth-700 text-sm">
                       <span class="text-moss-600 mr-2">•</span>
@@ -248,7 +287,7 @@
     </div>
 
     <!-- Integration Note -->
-    <div class="mb-12 p-8 bg-earth-50 rounded-xl max-w-4xl mx-auto border-2 border-earth-200">
+    <div class="mb-12 p-8 bg-white rounded-xl max-w-4xl mx-auto border-2 border-earth-200">
       <h2 class="text-2xl font-serif mb-4 text-earth-900">
         {t.integration.title}
       </h2>

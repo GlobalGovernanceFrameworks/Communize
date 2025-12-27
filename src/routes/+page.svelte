@@ -27,21 +27,90 @@
       <p class="text-xl md:text-2xl text-earth-700 mb-8 leading-relaxed">
         {$_('hero.subtitle')}
       </p>
+    </div>
+  </div>
+</section>
+
+<!-- Pathway Selector Section - NEW -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-serif text-2xl md:text-3xl text-center text-earth-900 mb-4">
+      {$_('pathways.title')}
+    </h2>
+    <p class="text-center text-earth-600 mb-12 max-w-2xl mx-auto">
+      {$_('pathways.subtitle')}
+    </p>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <!-- Practical Pathway -->
+      <a href="{base}/toolkit" class="group">
+        <div class="h-full bg-gradient-to-br from-moss-50 to-earth-50 rounded-xl p-8 border-2 border-earth-200 hover:border-moss-400 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-moss-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-earth-900 group-hover:text-moss-700 transition-colors">
+              {$_('pathways.practical.title')}
+            </h3>
+          </div>
+          <p class="text-earth-700 mb-4 leading-relaxed">
+            {$_('pathways.practical.description')}
+          </p>
+          <ul class="space-y-2 mb-6">
+            {#each $_('pathways.practical.features', { default: [] }) as feature}
+              <li class="flex items-start text-sm text-earth-700">
+                <svg class="w-5 h-5 text-moss-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>{feature}</span>
+              </li>
+            {/each}
+          </ul>
+          <div class="flex items-center text-moss-600 font-semibold group-hover:text-moss-700">
+            <span>{$_('pathways.practical.cta')}</span>
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </div>
+        </div>
+      </a>
       
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a 
-          href="{base}/scales"
-          class="px-8 py-3 bg-moss-600 text-white rounded-lg hover:bg-moss-700 transition-colors font-medium shadow-md hover:shadow-lg"
-        >
-          {$_('hero.cta')}
-        </a>
-        <a 
-          href="{base}/about"
-          class="px-8 py-3 border-2 border-earth-300 text-earth-700 rounded-lg hover:border-moss-400 hover:text-moss-700 transition-colors font-medium"
-        >
-          {$_('nav.about')}
-        </a>
-      </div>
+      <!-- Philosophical Pathway -->
+      <a href="{base}/scales" class="group">
+        <div class="h-full bg-gradient-to-br from-earth-50 to-clay-50 rounded-xl p-8 border-2 border-earth-200 hover:border-earth-400 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-earth-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-earth-900 group-hover:text-earth-700 transition-colors">
+              {$_('pathways.systems.title')}
+            </h3>
+          </div>
+          <p class="text-earth-700 mb-4 leading-relaxed">
+            {$_('pathways.systems.description')}
+          </p>
+          <ul class="space-y-2 mb-6">
+            {#each $_('pathways.systems.features', { default: [] }) as feature}
+              <li class="flex items-start text-sm text-earth-700">
+                <svg class="w-5 h-5 text-earth-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>{feature}</span>
+              </li>
+            {/each}
+          </ul>
+          <div class="flex items-center text-earth-600 font-semibold group-hover:text-earth-700">
+            <span>{$_('pathways.systems.cta')}</span>
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -59,7 +128,7 @@
   </div>
 </section>
 
-<!-- Four Scales Section -->
+<!-- Quick Links to All Scales - Simplified -->
 <section class="bg-white py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="font-serif text-3xl md:text-4xl text-center text-earth-900 mb-4">
@@ -141,7 +210,7 @@
   </div>
 </section>
 
-<!-- The Trilogy Section -->
+<!-- The Trilogy Section - Moved to Footer Area -->
 <section class="py-20 bg-gradient-to-br from-earth-50 to-moss-50">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="font-serif text-3xl md:text-4xl text-center text-earth-900 mb-4">
@@ -227,10 +296,7 @@
         </svg>
         {$_('cta.github')}
       </a>
-      <a 
-        href="mailto:bjorn.kenneth.holmstrom@gmail.com"
-        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-earth-300 text-earth-700 rounded-lg hover:border-moss-400 hover:text-moss-700 transition-colors font-medium"
-      >
+      <a href="mailto:bjorn.kenneth.holmstrom@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-earth-300 text-earth-700 rounded-lg hover:border-moss-400 hover:text-moss-700 transition-colors font-medium">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
@@ -238,6 +304,6 @@
       </a>
     </div>
   </div>
-  <br>
-  <ShareButtons />
 </section>
+
+<ShareButtons />
