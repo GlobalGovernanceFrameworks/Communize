@@ -600,6 +600,72 @@
       <h1 class="text-4xl md:text-5xl font-serif text-earth-900 mb-4 leading-tight">
         {t.hero.title}
       </h1>
+      
+      <!-- Bioregional Map -->
+      <div class="max-w-md mx-auto mb-6">
+        <svg viewBox="0 0 300 200" class="w-full h-auto opacity-90">
+          <!-- Baltic Sea -->
+          <path 
+            d="M 50 20 Q 80 10, 120 15 T 200 30 Q 230 45, 250 80 T 240 140 Q 220 170, 180 180 T 100 175 Q 60 165, 40 130 T 50 20 Z" 
+            fill="#93c5fd" 
+            fill-opacity="0.3"
+            stroke="#567d56" 
+            stroke-width="1.5"
+            stroke-dasharray="3,3"
+          />
+          
+          <!-- Estonia (northern) -->
+          <path 
+            d="M 140 35 L 180 30 L 190 50 L 165 55 L 140 50 Z" 
+            fill="#567d56" 
+            fill-opacity="0.6"
+          />
+          <text x="160" y="45" font-size="9" fill="#2d4a2d" font-weight="600" text-anchor="middle">EST</text>
+          
+          <!-- Latvia (middle) -->
+          <path 
+            d="M 130 60 L 175 58 L 180 90 L 145 92 L 125 80 Z" 
+            fill="#567d56" 
+            fill-opacity="0.5"
+          />
+          <text x="150" y="77" font-size="9" fill="#2d4a2d" font-weight="600" text-anchor="middle">LAT</text>
+          
+          <!-- Lithuania (southern) -->
+          <path 
+            d="M 115 95 L 155 93 L 160 120 L 130 125 L 110 110 Z" 
+            fill="#567d56" 
+            fill-opacity="0.4"
+          />
+          <text x="135" y="110" font-size="9" fill="#2d4a2d" font-weight="600" text-anchor="middle">LIT</text>
+          
+          <!-- Subtle trees/nature symbols -->
+          <g opacity="0.3">
+            <circle cx="70" cy="100" r="2" fill="#567d56"/>
+            <circle cx="75" cy="95" r="2" fill="#567d56"/>
+            <circle cx="80" cy="105" r="2" fill="#567d56"/>
+            <circle cx="220" cy="60" r="2" fill="#567d56"/>
+            <circle cx="225" cy="65" r="2" fill="#567d56"/>
+            <circle cx="215" cy="70" r="2" fill="#567d56"/>
+          </g>
+          
+          <!-- Flowing water lines -->
+          <path 
+            d="M 100 60 Q 110 65, 120 60" 
+            stroke="#567d56" 
+            stroke-width="1" 
+            fill="none" 
+            opacity="0.2"
+          />
+          <path 
+            d="M 180 100 Q 190 105, 200 100" 
+            stroke="#567d56" 
+            stroke-width="1" 
+            fill="none" 
+            opacity="0.2"
+          />
+        </svg>
+      </div>
+      
       <p class="text-xl text-earth-700 mb-4 leading-relaxed">
         {t.hero.subtitle}
       </p>
