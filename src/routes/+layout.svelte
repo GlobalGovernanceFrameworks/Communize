@@ -35,11 +35,11 @@
   
   const metaTitle = $derived('Communize - ' + (currentLanguage === 'en' 
     ? 'Cultivating the art and architecture of belonging'
-    : 'Att odla konsten och arkitekturen av tillhÃ¶righet'));
+    : 'Att odla konsten och arkitekturen av tillhörighet'));
 
   const metaDescription = $derived(currentLanguage === 'en'
-    ? 'Exploring the process of communizingâ€”building community and creating the commons'
-    : 'Att utforska processen av att kommuniseraâ€”att bygga gemenskap och skapa allmÃ¤nningar');
+    ? 'Exploring the process of communizing—building community and creating the commons'
+    : 'Att utforska processen av att kommunisera—att bygga gemenskap och skapa allmänningar');
 </script>
 
 <svelte:head>
@@ -68,9 +68,9 @@
     <a 
       href="#main-content"
       class="skip-link"
-      aria-label={currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehÃ¥ll'}
+      aria-label={currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
     >
-      {currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehÃ¥ll'}
+      {currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
     </a>
 
     <Header />

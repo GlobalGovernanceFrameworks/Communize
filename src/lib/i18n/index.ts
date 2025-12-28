@@ -1,8 +1,12 @@
-import { register, init, getLocaleFromNavigator } from 'svelte-i18n';
+import { addMessages, init, getLocaleFromNavigator } from 'svelte-i18n';
 
-// Register translation files
-register('en', () => import('./locales/en.json'));
-register('sv', () => import('./locales/sv.json'));
+// Import JSON files directly (not dynamically)
+import en from './locales/en.json';
+import sv from './locales/sv.json';
+
+// Add messages directly
+addMessages('en', en);
+addMessages('sv', sv);
 
 // Initialize with default locale
 init({

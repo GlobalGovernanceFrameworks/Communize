@@ -20,6 +20,11 @@ const config = {
 		}),
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/Communize' : ''
+		},
+		// ADD THIS: Force UTF-8 during prerendering
+		prerender: {
+			handleHttpError: 'warn',
+			handleMissingId: 'warn'
 		}
 	},
 	extensions: ['.svelte', '.md', '.svx']
