@@ -7,7 +7,7 @@
     title,
     description,
     keywords = '',
-    image = '/logo.svg',
+    image = '/og-image.png',
     type = 'website',
     author = 'Björn Kenneth Holmström',
     publishedTime = '',

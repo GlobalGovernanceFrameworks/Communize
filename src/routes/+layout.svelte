@@ -5,6 +5,7 @@
   import { waitLocale } from 'svelte-i18n';
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import languageStore from '$lib/stores/languageStore';
@@ -38,8 +39,15 @@
     : 'Att odla konsten och arkitekturen av tillhörighet'));
 
   const metaDescription = $derived(currentLanguage === 'en'
-    ? 'Exploring the process of communizing—building community and creating the commons'
-    : 'Att utforska processen av att kommunisera—att bygga gemenskap och skapa allmänningar');
+    ? 'Exploring the process of communizing—building community and creating the commons through shared resources, collective care, and mutual flourishing'
+    : 'Att utforska processen att kommunisera – att bygga gemenskap och skapa det gemensamma genom delade resurser, kollektiv omsorg och ömsesidig utveckling.');
+  
+  // Construct absolute URL for og:image
+  const ogImageUrl = $derived(
+    typeof window !== 'undefined' 
+      ? new URL(`${base}/og-image.png`, window.location.origin).href
+      : 'https://communize.org/og-image.png'
+  );
 </script>
 
 <svelte:head>
@@ -54,12 +62,16 @@
   <meta property="og:url" content={$page.url.href} />
   <meta property="og:title" content={metaTitle} />
   <meta property="og:description" content={metaDescription} />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={$page.url.href} />
   <meta property="twitter:title" content={metaTitle} />
   <meta property="twitter:description" content={metaDescription} />
+  <meta property="twitter:image" content={ogImageUrl} />
 </svelte:head>
 
 {#if isLoaded}
