@@ -92,6 +92,55 @@
         title: "Integration across scales",
         text: "These scales are not separate—they interpenetrate. How we relate to ourselves shapes how we relate to others. Local practices inform global patterns. Digital tools enable new forms of local collaboration. Understanding all four scales helps us see the complete ecology of belonging."
       },
+      thermodynamic: {
+        title: "The thermodynamic foundation: Type I-Bio civilization",
+        intro: "Our exploration of planetary commons aligns with recent work in civilizational thermodynamics. Darryl J. Nicke II's Neo-Kardashev Scale provides the biophysical framework for what we're building socially.",
+        problem: {
+          title: "The original problem",
+          text: "The classic Kardashev Scale (1964) measures civilizational advancement by energy consumption. But this conflates battery discharge with progress—civilizations that maximize energy throughput while depleting biological complexity are optimizing for extinction."
+        },
+        reframe: {
+          title: "The thermodynamic reframe",
+          text: "The Neo-Kardashev Scale measures advancement by negentropic enhancement capacity—the ability to increase organized biological complexity rather than merely consume energy."
+        },
+        type0: {
+          title: "Where we are now: Type 0-Bio",
+          text: "Modern civilization operates in ecological deficit, discharging Earth's 'biosphere battery' (accumulated over billions of years) faster than it recharges:",
+          points: [
+            "Net biomass loss globally",
+            "Declining soil organic carbon",
+            "Accelerating species extinction",
+            "Moving toward thermodynamic equilibrium (incompatible with complex life)"
+          ]
+        },
+        type1: {
+          title: "Where we're going: Type I-Bio",
+          text: "A planetary regenerative civilization operating as net-positive ecological force:",
+          points: [
+            "Net global biomass increasing",
+            "Soil carbon rising in agricultural lands",
+            "Biodiversity recovering",
+            "Net carbon drawdown exceeding emissions",
+            "Economic systems rewarding regeneration over extraction"
+          ]
+        },
+        connection: {
+          title: "Why this matters for Communize",
+          text: "The social coordination protocols we're developing (tools for collective resource management, decision-making, knowledge sharing) are the operating system for Type I-Bio transition.",
+          details: "Darryl has the thermodynamic metrics (soil carbon +0.1%/year, biodiversity recovery thresholds). We're building the trust infrastructure (Stuga, resource mappers, agreement templates) that enables communities to coordinate toward those metrics.",
+          synthesis: [
+            "His 'Type I-Bio Civilization' = Our 'Commons-Based Society'",
+            "His 'Bio-Negentropic Capacity Vector' = Our 'Community Health Metrics'",
+            "His 'Great Filter' hypothesis = Why building commons now is civilizationally critical"
+          ]
+        },
+        conclusion: "We're not just building community gardens and tool libraries. We're prototyping the coordination layer for planetary-scale regeneration. The Baltic Bioregional Network is an early experiment in what Type I-Bio transition looks like on the ground.",
+        readMore: {
+          title: "Further reading",
+          paper: "The Neo-Kardashev Scale: A Thermodynamic Framework for Regenerative Civilizations",
+          battery: "Human domination of the biosphere: Rapid discharge of the earth-space battery"
+        }
+      },
       cta: {
         title: "Explore each scale",
         text: "Dive deeper into any scale to discover essays, practices, and examples of communizing in action."
@@ -180,6 +229,55 @@
       integration: {
         title: "Integration över skalor",
         text: "Dessa skalor är inte separata—de genomsyrar varandra. Hur vi relaterar till oss själva formar hur vi relaterar till andra. Lokala praktiker informerar globala mönster. Digitala verktyg möjliggör nya former av lokalt samarbete. Att förstå alla fyra skalor hjälper oss se den fullständiga ekologin av tillhörighet."
+      },
+      thermodynamic: {
+        title: "Den termodynamiska grunden: Typ I-Bio civilisation",
+        intro: "Vår utforskning av planetära allmänningar stämmer överens med nyligt arbete inom civilisatorisk termodynamik. Darryl J. Nicke II:s Neo-Kardashev skala ger det biofysiska ramverket för vad vi bygger socialt.",
+        problem: {
+          title: "Det ursprungliga problemet",
+          text: "Den klassiska Kardashev-skalan (1964) mäter civilisatorisk framsteg genom energikonsumtion. Men detta sammanblandar batteriurladdning med framsteg—civilisationer som maximerar energigenomströmning samtidigt som de utarmar biologisk komplexitet optimerar för utrotning."
+        },
+        reframe: {
+          title: "Den termodynamiska omformningen",
+          text: "Neo-Kardashev-skalan mäter framsteg genom negentropisk förbättringskapacitet—förmågan att öka organiserad biologisk komplexitet snarare än bara konsumera energi."
+        },
+        type0: {
+          title: "Där vi är nu: Typ 0-Bio",
+          text: "Modern civilisation verkar i ekologiskt underskott och laddar ur jordens 'biosförbatteri' (ackumulerat över miljarder år) snabbare än det laddas:",
+          points: [
+            "Netto biomassaförlust globalt",
+            "Minskande organiskt kol i jorden",
+            "Accelererande artutrotning",
+            "Rörelse mot termodynamisk jämvikt (oförenlig med komplext liv)"
+          ]
+        },
+        type1: {
+          title: "Där vi är på väg: Typ I-Bio",
+          text: "En planetär regenerativ civilisation som verkar som netto-positiv ekologisk kraft:",
+          points: [
+            "Netto global biomassa ökande",
+            "Markkolhalten stigande på jordbruksmark",
+            "Biologisk mångfald återhämtar sig",
+            "Netto koldioxidupptagning överstiger utsläpp",
+            "Ekonomiska system som belönar regenerering över utvinning"
+          ]
+        },
+        connection: {
+          title: "Varför detta spelar roll för Communize",
+          text: "De sociala koordinationsprotokoll vi utvecklar (verktyg för kollektiv resurshantering, beslutsfattande, kunskapsdelning) är operativsystemet för Typ I-Bio övergång.",
+          details: "Darryl har de termodynamiska mätvärdena (markkol +0,1%/år, tröskelvärden för biologisk mångfald återhämtning). Vi bygger förtroendeinfrastrukturen (Stuga, resurskartläggare, avtalsmallar) som gör det möjligt för samhällen att koordinera mot dessa mätvärden.",
+          synthesis: [
+            "Hans 'Typ I-Bio civilisation' = Vår 'allmänningsbaserade samhälle'",
+            "Hans 'Bio-negentropisk kapacitetsvektor' = Våra 'samhällshälsomätvärden'",
+            "Hans 'Stora filter'-hypotes = Varför att bygga allmänningar nu är civilisatoriskt kritiskt"
+          ]
+        },
+        conclusion: "Vi bygger inte bara gemenskapsträdgårdar och verktygsbibliotek. Vi prototypar koordinationslagret för planetär regenerering. Det baltiska bioregionala nätverket är ett tidigt experiment i hur Typ I-Bio övergång ser ut på marken.",
+        readMore: {
+          title: "Vidare läsning",
+          paper: "Neo-Kardashev-skalan: Ett termodynamiskt ramverk för regenerativa civilisationer",
+          battery: "Mänsklig dominans av biosfären: Snabb urladdning av jord-rymd batteriet"
+        }
       },
       cta: {
         title: "Utforska varje skala",
@@ -294,6 +392,129 @@
       <p class="text-earth-700 leading-relaxed">
         {t.integration.text}
       </p>
+    </div>
+
+    <!-- Thermodynamic Foundation: Neo-Kardashev Scale -->
+    <div class="mb-12 p-8 bg-gradient-to-br from-moss-50 via-earth-50 to-clay-50 rounded-xl max-w-4xl mx-auto border-2 border-moss-300">
+      <h2 class="text-2xl font-serif mb-3 text-earth-900">
+        {t.thermodynamic.title}
+      </h2>
+      <p class="text-earth-700 mb-6 leading-relaxed">
+        {t.thermodynamic.intro}
+      </p>
+
+      <!-- The Problem -->
+      <div class="mb-6 p-4 bg-white/70 rounded-lg border border-earth-200">
+        <h3 class="text-lg font-semibold text-earth-900 mb-2">
+          {t.thermodynamic.problem.title}
+        </h3>
+        <p class="text-earth-700 text-sm leading-relaxed">
+          {t.thermodynamic.problem.text}
+        </p>
+      </div>
+
+      <!-- The Reframe -->
+      <div class="mb-6 p-4 bg-white/70 rounded-lg border border-moss-200">
+        <h3 class="text-lg font-semibold text-moss-800 mb-2">
+          {t.thermodynamic.reframe.title}
+        </h3>
+        <p class="text-earth-700 text-sm leading-relaxed">
+          {t.thermodynamic.reframe.text}
+        </p>
+      </div>
+
+      <!-- Type 0-Bio -->
+      <div class="mb-6 p-4 bg-white/70 rounded-lg border border-clay-200">
+        <h3 class="text-lg font-semibold text-clay-700 mb-2">
+          {t.thermodynamic.type0.title}
+        </h3>
+        <p class="text-earth-700 text-sm mb-3 leading-relaxed">
+          {t.thermodynamic.type0.text}
+        </p>
+        <ul class="space-y-1.5">
+          {#each t.thermodynamic.type0.points as point}
+            <li class="flex items-start text-sm text-earth-700">
+              <span class="text-clay-600 mr-2">•</span>
+              <span>{point}</span>
+            </li>
+          {/each}
+        </ul>
+      </div>
+
+      <!-- Type I-Bio -->
+      <div class="mb-6 p-4 bg-white/70 rounded-lg border border-moss-300">
+        <h3 class="text-lg font-semibold text-moss-700 mb-2">
+          {t.thermodynamic.type1.title}
+        </h3>
+        <p class="text-earth-700 text-sm mb-3 leading-relaxed">
+          {t.thermodynamic.type1.text}
+        </p>
+        <ul class="space-y-1.5">
+          {#each t.thermodynamic.type1.points as point}
+            <li class="flex items-start text-sm text-earth-700">
+              <span class="text-moss-600 mr-2">•</span>
+              <span>{point}</span>
+            </li>
+          {/each}
+        </ul>
+      </div>
+
+      <!-- Connection to Communize -->
+      <div class="mb-6 p-4 bg-moss-100 rounded-lg border-2 border-moss-400">
+        <h3 class="text-lg font-semibold text-earth-900 mb-2">
+          {t.thermodynamic.connection.title}
+        </h3>
+        <p class="text-earth-800 text-sm mb-3 leading-relaxed font-medium">
+          {t.thermodynamic.connection.text}
+        </p>
+        <p class="text-earth-700 text-sm mb-3 leading-relaxed">
+          {t.thermodynamic.connection.details}
+        </p>
+        <div class="space-y-2 pt-2 border-t border-moss-300">
+          {#each t.thermodynamic.connection.synthesis as item}
+            <div class="flex items-start text-sm text-earth-800">
+              <span class="text-moss-700 mr-2">→</span>
+              <span class="font-medium">{item}</span>
+            </div>
+          {/each}
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="p-4 bg-earth-900 rounded-lg text-earth-100 mb-6">
+        <p class="text-sm leading-relaxed">
+          {t.thermodynamic.conclusion}
+        </p>
+      </div>
+
+      <!-- Further Reading -->
+      <div class="text-sm">
+        <p class="font-semibold text-earth-800 mb-2">{t.thermodynamic.readMore.title}:</p>
+        <ul class="space-y-1.5">
+          <li>
+            <a 
+              href="https://doi.org/10.5281/zenodo.17709844"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-moss-700 hover:text-moss-800 border-b border-moss-300 hover:border-moss-500 transition-colors"
+            >
+              {t.thermodynamic.readMore.paper}
+            </a>
+            <span class="text-earth-600"> (Nicke, 2025)</span>
+          </li>
+          <li>
+            <a 
+              href="https://www.pnas.org/doi/10.1073/pnas.1508353112"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-moss-700 hover:text-moss-800 border-b border-moss-300 hover:border-moss-500 transition-colors"
+            >
+              {t.thermodynamic.readMore.battery}
+            </a>
+            <span class="text-earth-600"> (Schramski et al., 2015)</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- CTA -->
