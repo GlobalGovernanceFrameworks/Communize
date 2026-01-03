@@ -1,4 +1,4 @@
-<!-- /src/routes/baltic/+page.svelte -->
+<!-- /src/routes/bioregions/baltic/+page.svelte -->
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import { base } from '$app/paths';
@@ -9,573 +9,137 @@
   const translations = {
     en: {
       meta: {
-        title: "Baltic Bioregional Homesteading Network",
-        description: "Peer-validated knowledge base for regenerative living in Estonia, Latvia, and Lithuania"
+        title: "Baltic Homesteading Network - Find Regenerative Practitioners",
+        description: "Connect with experienced homesteaders across Estonia, Latvia, and Lithuania. Like WWOOF, but for neighbors who stay."
       },
       hero: {
-        title: "Baltic Bioregional Homesteading Network",
-        subtitle: "Peer-validated knowledge for regenerative living in Estonia, Latvia, and Lithuania",
-        status: "Open to contributors • Living document • No bureaucracy"
+        title: "Baltic Homesteading Network",
+        subtitle: "Find regenerative practitioners in your bioregion",
+        tagline: "Like WWOOF, but for neighbors who stay. Connect with experienced homesteaders across Estonia, Latvia, and Lithuania."
       },
       langSelector: "Language:",
-      purpose: {
-        title: "Why this exists",
-        intro: "Hundreds of Baltic homesteaders are figuring out through trial and error what others already know. This knowledge base prevents that waste.",
-        different: "What makes this different:",
+      why: {
+        title: "Why bioregional?",
+        intro: "Generic permaculture advice fails in the Baltics. What works in California doesn't work in clay-rich Estonian soil. What works in sunny Portugal fails during Baltic winters.",
         points: [
-          "Bioregionally specific – focused on what works in Baltic climate and soil",
-          "Peer-validated – contributed by people with real experience",
-          "Failure-inclusive – we document what doesn't work, not just successes",
-          "Timeline-realistic – honest about how long things actually take",
-          "Coordination-enabled – connects you with experienced practitioners"
+          "Climate matters - frost dates, growing seasons, and soil composition vary drastically across bioregions",
+          "Language access - knowledge in your native language, validated by local practitioners",
+          "Practical coordination - seed sharing and tool libraries require geographic proximity",
+          "Contextual wisdom - learn from people solving the exact problems you face, in the exact place you live"
         ]
       },
-      status: {
-        current: "Current status:",
-        description: "Volunteer-driven knowledge sharing. No organization, no budget, no bureaucracy.",
-        future: "Potential future:",
-        futureDesc: "If this proves valuable: bulk purchasing coordination, tool sharing networks, integration with other bioregions, or formalization as a cooperative. But we're starting simple."
-      },
-      sections: {
-        title: "What's inside",
-        items: [
+      how: {
+        title: "How it works",
+        steps: [
           {
-            icon: "🌱",
-            title: "What Works Here",
-            description: "Specific crop varieties, techniques, and timelines proven in Baltic climate. Organized by country (Estonia, Latvia, Lithuania)."
+            icon: "📝",
+            title: "Add yourself",
+            description: "Submit your profile with your location, skills, and what you can offer or teach."
           },
           {
-            icon: "⚠️",
-            title: "What Fails (Important!)",
-            description: "Expensive lessons documented so you don't repeat them. Failed experiments, crops that don't work, techniques to avoid."
-          },
-          {
-            icon: "📅",
-            title: "Realistic Timelines",
-            description: "Year 1 vs Year 5 expectations. How long soil building actually takes. When systems become self-maintaining."
-          },
-          {
-            icon: "💰",
-            title: "Economic Realities",
-            description: "Honest numbers: initial investment, ongoing costs, break-even timelines. Why 'ROI' isn't just financial."
+            icon: "🗺️",
+            title: "Explore the map",
+            description: "Find nearby practitioners. See who's working with similar challenges in your area."
           },
           {
             icon: "🤝",
-            title: "Local Practitioners",
-            description: "Connect with experienced homesteaders willing to mentor. Country-specific contacts and expertise areas."
-          },
-          {
-            icon: "🛠️",
-            title: "Resources & Tools",
-            description: "Seed sources, tool sharing networks, markets, and legal/regulatory context for each country."
+            title: "Connect offline",
+            description: "Reach out directly. Visit their homestead. Share knowledge face-to-face."
           }
         ]
       },
-      howto: {
-        title: "How to use this",
-        steps: [
-          "Access the living knowledge base (link below)",
-          "Find your country section (Estonia, Latvia, Lithuania)",
-          "Read what experienced homesteaders have learned",
-          "Contact contributors if you have questions",
-          "Add your own learnings as you gain experience"
-        ]
+      join: {
+        title: "Join the network",
+        description: "Add yourself to the map so other Baltic homesteaders can find you.",
+        formButton: "Submit your profile",
+        emailButton: "Email instead",
+        note: "We review all submissions within 2-3 days and add approved profiles to the map."
       },
-      contribute: {
-        title: "How to contribute",
-        intro: "This only works if practitioners share what they've learned.",
-        steps: [
-          "Request edit access from the coordinator",
-          "Add your experiences to the relevant sections",
-          "Be honest about failures and challenges",
-          "Include timelines (Year 1, Year 3, Year 5)",
-          "Optional: Add contact info if you're willing to mentor"
+      profiles: {
+        title: "What you'll find",
+        intro: "Profiles include:",
+        items: [
+          "Location (approximate - privacy preserved)",
+          "Bio and experience level",
+          "What they offer (knowledge, tools, skills)",
+          "What they're learning (current challenges)",
+          "How to contact them (email, website, or visit)"
         ],
-        what: "What to contribute:",
-        whatList: [
-          "Specific varieties that work/fail",
-          "Soil building techniques and timelines",
-          "Pest/disease management strategies",
-          "Storage/preservation methods",
-          "Economic realities (honest numbers)",
-          "Failures (prevent others from same mistakes)"
-        ]
+        examples: "Examples: 'Permaculture design in clay soil', 'Tractor sharing', 'Season extension techniques', 'Natural building mentorship'"
       },
-      coordinator: {
-        title: "Regional Coordinator Needed",
-        status: "Open Position",
-        description: "This knowledge base needs someone to invite contributors, maintain quality, connect people, and facilitate coordination.",
-        commitment: "Time commitment:",
-        commitmentDetails: "Initial: ~10 hours to set up. Ongoing: 2-5 hours/month.",
-        why: "Why this matters:",
-        whyDetails: "Right now, hundreds of Baltic homesteaders are struggling alone. A coordinator helps prevent that waste by connecting people and maintaining infrastructure for self-organization.",
-        benefits: "What's in it for you:",
-        benefitsList: [
-          "Lead a potentially important network",
-          "First to benefit from coordination (bulk purchases, mutual aid)",
-          "Potential paid role if network grows",
-          "Connection to broader resilience frameworks"
+      wwoof: {
+        title: "Like WWOOF, but different",
+        intro: "You might know WWOOF (World Wide Opportunities on Organic Farms) - volunteers travel to work on farms in exchange for food and shelter.",
+        differences: [
+          {
+            wwoof: "For travelers and short-term volunteers",
+            baltic: "For neighbors and long-term residents"
+          },
+          {
+            wwoof: "Work exchange (labor for accommodation)",
+            baltic: "Knowledge exchange (peer-to-peer learning)"
+          },
+          {
+            wwoof: "Farms host visiting volunteers",
+            baltic: "Practitioners connect as equals"
+          },
+          {
+            wwoof: "Great for learning while traveling",
+            baltic: "Great for building resilient bioregional networks"
+          }
         ],
-        apply: "Interested? Contact the creator below."
-      },
-      cta: {
-        primary: "Access the Knowledge Base",
-        primaryDesc: "View and contribute to the living document",
-        secondary: "Become Coordinator",
-        secondaryDesc: "Lead this network"
-      },
-      contact: {
-        title: "Contact & Coordination",
-        creator: "Initial Creator:",
-        name: "Björn Kenneth Holmström",
-        role: "Created template and structure. Available for technical support and questions about broader coordination frameworks.",
-        coordinator: "Regional Coordinator:",
-        coordinatorStatus: "OPEN POSITION – Apply via email above"
+        complement: "These complement each other. WWOOF is excellent for exploration. The Baltic Network is for putting down roots and building community where you live."
       },
       principles: {
-        title: "Core Principles",
+        title: "Core principles",
         items: [
-          "Knowledge freely accessible – No paywalls, no gatekeeping",
-          "Community-owned – Contributors retain credit for their work",
-          "Failure-friendly – Mistakes are valuable learning",
-          "Start simple – Prove it works before adding complexity",
-          "Self-organizing – No permission needed to coordinate with others"
+          "Bioregionally specific - what works here, not generic advice",
+          "Peer-to-peer - no experts, just experienced practitioners",
+          "Privacy-respecting - you control what you share",
+          "No paywalls, no gatekeeping - knowledge freely accessible",
+          "Offline-first - connections happen face-to-face",
+          "Community-owned - you retain ownership of your knowledge",
+          "Start simple - prove it works before adding complexity"
         ]
+      },
+      map: {
+        title: "The map (coming soon)",
+        description: "We're building an interactive map showing all network members. You'll be able to:",
+        features: [
+          "Filter by skills, crops, techniques",
+          "See approximate locations (privacy-preserved)",
+          "Find practitioners within your travel range",
+          "Discover what's possible in your microclimate"
+        ],
+        timeline: "Map launches when we have 10+ profiles. Be one of the first!"
+      },
+      contact: {
+        title: "Questions or feedback?",
+        creator: "Network founded by:",
+        name: "Björn Kenneth Holmström",
+        role: "Building coordination infrastructure for bioregional resilience. Based in Sweden, working across Nordic/Baltic regions.",
+        email: "Email:",
+        note: "Not on social media? Just email. I read everything."
       },
       footer: {
         integration: "Part of the broader Communize ecosystem exploring commons-based resilience.",
-        license: "Knowledge base freely shared for non-commercial use. Contributors retain credit."
+        license: "Network infrastructure open-source (AGPL-3.0). Your knowledge remains yours."
       }
     },
-    et: {
-      meta: {
-        title: "Balti bioregiooni talupidamise võrgustik",
-        description: "Taastootliku elamise teadmusbaas Eestis, Lätis ja Leedus"
-      },
-      hero: {
-        title: "Balti bioregiooni talupidamise võrgustik",
-        subtitle: "Taastootliku elamise teadmused Eestis, Lätis ja Leedus",
-        status: "Avatud kaastöötajatele • Elav dokument • Ilma bürokraatiata"
-      },
-      langSelector: "Keel:",
-      purpose: {
-        title: "Miks see eksisteerib",
-        intro: "Sajad Balti talunikud õpivad katse-eksituse meetodil seda, mida teised juba teavad. See teadmusbaas hoiab ära selle raiskamise.",
-        different: "Mis teeb selle erinevaks:",
-        points: [
-          "Bioregionaalselt spetsiifiline – keskendub sellele, mis töötab Balti kliimas ja pinnases",
-          "Kogukonna poolt valideeritud – panustatud inimeste poolt, kellel on tõeline kogemus",
-          "Kaasab ebaõnnestumisi – dokumenteerime, mis ei tööta, mitte ainult edu",
-          "Realistlikud ajagraafikud – ausad selle kohta, kui kaua asjad tegelikult võtavad",
-          "Koordineerimist võimaldav – ühendab teid kogenud praktikutega"
-        ]
-      },
-      status: {
-        current: "Praegune olukord:",
-        description: "Vabatahtlike juhitud teadmiste jagamine. Ei organisatsiooni, ei eelarvet, ei bürokraatiat.",
-        future: "Võimalik tulevik:",
-        futureDesc: "Kui see osutub väärtuslikuks: hulgiostukoordinatsioon, tööriistade jagamise võrgustikud, integratsioon teiste bioregionidega või formaliseerumine kooperatiivina. Aga alustame lihtsalt."
-      },
-      sections: {
-        title: "Mis sees on",
-        items: [
-          {
-            icon: "🌱",
-            title: "Mis siin töötab",
-            description: "Konkreetsed taimesordid, tehnikad ja ajagraafikud, mis on tõestatud Balti kliimas. Korraldatud riikide kaupa (Eesti, Läti, Leedu)."
-          },
-          {
-            icon: "⚠️",
-            title: "Mis ebaõnnestub (Oluline!)",
-            description: "Kallid õppetunnid dokumenteeritud, et te neid ei kordaks. Ebaõnnestunud eksperimendid, põllukultuurid, mis ei tööta, vältimist vajavad tehnikad."
-          },
-          {
-            icon: "📅",
-            title: "Realistlikud ajagraafikud",
-            description: "1. aasta vs 5. aasta ootused. Kui kaua mullastiku ülesehitamine tegelikult võtab. Millal süsteemid muutuvad isemajandavateks."
-          },
-          {
-            icon: "💰",
-            title: "Majanduslikud reaalsused",
-            description: "Ausad numbrid: algne investeering, jooksvad kulud, tasuvusajad. Miks 'ROI' pole ainult rahaline."
-          },
-          {
-            icon: "🤝",
-            title: "Kohalikud praktikud",
-            description: "Ühenda kogenud talunike juurde, kes on valmis mentorlust pakkuma. Riigipõhised kontaktid ja ekspertiisivaldkonnad."
-          },
-          {
-            icon: "🛠️",
-            title: "Ressursid ja tööriistad",
-            description: "Seemnealliad, tööriistade jagamise võrgustikud, turud ja iga riigi õiguslik/regulatiivne kontekst."
-          }
-        ]
-      },
-      howto: {
-        title: "Kuidas kasutada",
-        steps: [
-          "Pääse ligi elavale teadmusbaasile (link allpool)",
-          "Leia oma riigi sektsioon (Eesti, Läti, Leedu)",
-          "Loe, mida kogenud talunikud on õppinud",
-          "Võta ühendust kaastöötajatega, kui sul on küsimusi",
-          "Lisa oma õppetunnid, kui sa kogemust kogud"
-        ]
-      },
-      contribute: {
-        title: "Kuidas panustada",
-        intro: "See töötab ainult siis, kui praktikud jagavad, mida nad on õppinud.",
-        steps: [
-          "Taotle muutmisõigust koordinaatorilt",
-          "Lisa oma kogemused asjakohastesse sektsioonidesse",
-          "Ole aus ebaõnnestumiste ja väljakutsete suhtes",
-          "Kaasa ajagraafikud (1. aasta, 3. aasta, 5. aasta)",
-          "Valikuline: Lisa kontaktandmed, kui oled valmis mentorlust pakkuma"
-        ],
-        what: "Mida panustada:",
-        whatList: [
-          "Konkreetsed sordid, mis töötavad/ebaõnnestuvad",
-          "Mullastiku ülesehitamise tehnikad ja ajagraafikud",
-          "Kahjurite/haiguste ohjamise strateegiad",
-          "Säilitamise/konserveerimise meetodid",
-          "Majanduslikud reaalsused (ausad numbrid)",
-          "Ebaõnnestumised (väldi teiste samade vigade tegemist)"
-        ]
-      },
-      coordinator: {
-        title: "Vajame regiooni koordinaatorit",
-        status: "Ametikoht vaba",
-        description: "See teadmusbaas vajab kedagi, kes kutsub kaastöötajaid, hoiab kvaliteeti, ühendab inimesi ja hõlbustab koordinatsiooni.",
-        commitment: "Ajaline kohustus:",
-        commitmentDetails: "Algne: ~10 tundi ülesseadmiseks. Jooksev: 2-5 tundi kuus.",
-        why: "Miks see on oluline:",
-        whyDetails: "Praegu võitlevad sajad Balti talunikud üksi. Koordinaator aitab seda raiskamist vältida, ühendades inimesi ja hooldades enesekorralduse infrastruktuuri.",
-        benefits: "Mis sul sellest on:",
-        benefitsList: [
-          "Juhi potentsiaalselt olulist võrgustikku",
-          "Esimesena kasu koordinatsioonist (hulgiostu, vastastikune abi)",
-          "Potentsiaalne tasustatud roll, kui võrgustik kasvab",
-          "Ühendus laiemate vastupidavuse raamistike juurde"
-        ],
-        apply: "Huvitatud? Võta ühendust loojaga allpool."
-      },
-      cta: {
-        primary: "Ava teadmusbaas",
-        primaryDesc: "Vaata ja panusta elavasse dokumenti",
-        secondary: "Hakka koordinaatoriks",
-        secondaryDesc: "Juhi seda võrgustikku"
-      },
-      contact: {
-        title: "Kontakt ja koordineerimine",
-        creator: "Algne looja:",
-        name: "Björn Kenneth Holmström",
-        role: "Lõi malli ja struktuuri. Saadaval tehniliseks toeks ja küsimusteks laiema koordineerimise raamistike kohta.",
-        coordinator: "Regiooni koordinaator:",
-        coordinatorStatus: "VABA AMETIKOHT – Kandideeri ülaloleva e-posti kaudu"
-      },
-      principles: {
-        title: "Põhiprintsiibid",
-        items: [
-          "Teadmised vabalt kättesaadavad – Ei tasulisi tõkkeid, ei väravatehnikut",
-          "Kogukonna omanduses – Kaastöötajad säilitavad auhinna oma töö eest",
-          "Ebaõnnestumist talutav – Vead on väärtuslik õpe",
-          "Alusta lihtsalt – Tõesta, et see töötab, enne keerukuse lisamist",
-          "Enesekorraldav – Luba pole vaja teistega koordineerimiseks"
-        ]
-      },
-      footer: {
-        integration: "Osa laiemast Communize ökosüsteemist, mis uurib ühismaa-põhist vastupidavust.",
-        license: "Teadmusbaas jagatud vabalt mittekommertsiaalseks kasutamiseks. Kaastöötajad säilitavad auhinna."
-      }
-    },
-    lv: {
-      meta: {
-        title: "Baltijas bioregionālā saimniecības tīkls",
-        description: "Atjaunojošās dzīves zināšanu bāze Igaunijā, Latvijā un Lietuvā"
-      },
-      hero: {
-        title: "Baltijas bioregionālā saimniecības tīkls",
-        subtitle: "Atjaunojošās dzīves zināšanas Igaunijā, Latvijā un Lietuvā",
-        status: "Atvērts ieguldītājiem • Dzīvs dokuments • Bez birokrātijas"
-      },
-      langSelector: "Valoda:",
-      purpose: {
-        title: "Kāpēc tas eksistē",
-        intro: "Simtiem Baltijas saimnieku mācās, izmantojot izmēģinājumu un kļūdu metodi, to, ko citi jau zina. Šī zināšanu bāze novērš šo izšķērdību.",
-        different: "Kas to atšķir:",
-        points: [
-          "Bioregionāli specifisks – koncentrēts uz to, kas darbojas Baltijas klimatā un augsnē",
-          "Kopienas apstiprināts – veidots no cilvēkiem ar reālu pieredzi",
-          "Iekļauj neveiksmes – dokumentējam, kas nedarbojas, ne tikai panākumus",
-          "Reālistiski termiņi – godīgi par to, cik ilgu laiku lietas patiesībā aizņem",
-          "Iespējota koordinācija – savieno jūs ar pieredzējušiem praktiķiem"
-        ]
-      },
-      status: {
-        current: "Pašreizējais stāvoklis:",
-        description: "Brīvprātīgo vadīta zināšanu apmaiņa. Nav organizācijas, nav budžeta, nav birokrātijas.",
-        future: "Iespējamā nākotne:",
-        futureDesc: "Ja tas izrādās vērtīgs: lielapjoma iepirkumu koordinācija, rīku koplietošanas tīkli, integrācija ar citiem bioreģioniem vai formalizēšana kā kooperatīvs. Bet mēs sākam vienkārši."
-      },
-      sections: {
-        title: "Kas ir iekšā",
-        items: [
-          {
-            icon: "🌱",
-            title: "Kas šeit darbojas",
-            description: "Konkrētas augu šķirnes, metodes un termiņi, kas pierādīti Baltijas klimatā. Organizēti pēc valstīm (Igaunija, Latvija, Lietuva)."
-          },
-          {
-            icon: "⚠️",
-            title: "Kas neizdodas (Svarīgi!)",
-            description: "Dārgas mācības dokumentētas, lai jūs tās neatkārtotu. Neveiksmīgi eksperimenti, augi, kas nedarbojas, metodes, ko izvairīties."
-          },
-          {
-            icon: "📅",
-            title: "Reālistiski termiņi",
-            description: "1. gada pret 5. gada cerības. Cik ilgi augsnes veidošana patiesībā aizņem. Kad sistēmas kļūst pašuzturošas."
-          },
-          {
-            icon: "💰",
-            title: "Ekonomiskās realitātes",
-            description: "Godīgi skaitļi: sākotnējā investīcija, tekošie izdevumi, rentabilitātes termiņi. Kāpēc 'ROI' nav tikai finansiāls."
-          },
-          {
-            icon: "🤝",
-            title: "Vietējie praktiķi",
-            description: "Savienojieties ar pieredzējušiem saimniekiem, kas gatavi mentorēt. Valsts specifiskas kontaktpersonas un ekspertīzes jomas."
-          },
-          {
-            icon: "🛠️",
-            title: "Resursi un rīki",
-            description: "Sēklu avoti, rīku koplietošanas tīkli, tirgi un juridiskais/normatīvais konteksts katrai valstij."
-          }
-        ]
-      },
-      howto: {
-        title: "Kā lietot",
-        steps: [
-          "Piekļūt dzīvajai zināšanu bāzei (saite zemāk)",
-          "Atrodiet savu valsts sadaļu (Igaunija, Latvija, Lietuva)",
-          "Lasīt, ko pieredzējuši saimnieki ir iemācījušies",
-          "Sazināties ar ieguldītājiem, ja jums ir jautājumi",
-          "Pievienot savas mācības, kad jūs iegūstat pieredzi"
-        ]
-      },
-      contribute: {
-        title: "Kā ieguldīt",
-        intro: "Tas darbojas tikai tad, ja praktiķi dalās ar to, ko viņi ir iemācījušies.",
-        steps: [
-          "Pieprasīt rediģēšanas piekļuvi no koordinatora",
-          "Pievienot savas pieredzes atbilstošajām sadaļām",
-          "Būt godīgam par neveiksmes un izaicinājumiem",
-          "Iekļaut termiņus (1. gads, 3. gads, 5. gads)",
-          "Pēc izvēles: Pievienot kontaktinformāciju, ja esat gatavs mentorēt"
-        ],
-        what: "Ko ieguldīt:",
-        whatList: [
-          "Konkrētas šķirnes, kas darbojas/neizdodas",
-          "Augsnes veidošanas metodes un termiņi",
-          "Kaitēkļu/slimību pārvaldības stratēģijas",
-          "Uzglabāšanas/konservēšanas metodes",
-          "Ekonomiskās realitātes (godīgi skaitļi)",
-          "Neveiksmes (novērst citiem tās pašas kļūdas)"
-        ]
-      },
-      coordinator: {
-        title: "Nepieciešams reģionālais koordinators",
-        status: "Vakance",
-        description: "Šī zināšanu bāze vajag kādu, kas uzaicina ieguldītājus, uztur kvalitāti, savieno cilvēkus un veicina koordināciju.",
-        commitment: "Laika ieguldījums:",
-        commitmentDetails: "Sākotnējais: ~10 stundas uzstādīšanai. Tekošais: 2-5 stundas mēnesī.",
-        why: "Kāpēc tas ir svarīgi:",
-        whyDetails: "Pašlaik simtiem Baltijas saimnieku cīnās vieni paši. Koordinators palīdz novērst šo izšķērdību, savienojot cilvēkus un uzturot infrastruktūru pašorganizācijai.",
-        benefits: "Kas jums no tā:",
-        benefitsList: [
-          "Vadīt potenciāli svarīgu tīklu",
-          "Pirmais, kas gūst labumu no koordinācijas (lielapjoma pirkumi, savstarpēja palīdzība)",
-          "Potenciāla apmaksāta loma, ja tīkls aug",
-          "Savienojums ar plašākām noturības sistēmām"
-        ],
-        apply: "Interesē? Sazinieties ar radītāju zemāk."
-      },
-      cta: {
-        primary: "Piekļūt zināšanu bāzei",
-        primaryDesc: "Skatīt un ieguldīt dzīvajā dokumentā",
-        secondary: "Kļūt par koordinatoru",
-        secondaryDesc: "Vadīt šo tīklu"
-      },
-      contact: {
-        title: "Kontakts un koordinācija",
-        creator: "Sākotnējais radītājs:",
-        name: "Björn Kenneth Holmström",
-        role: "Izveidoja veidni un struktūru. Pieejams tehniskai atbalstam un jautājumiem par plašākām koordinācijas sistēmām.",
-        coordinator: "Reģionālais koordinators:",
-        coordinatorStatus: "VAKANCE – Pieteikties pa e-pastu augšā"
-      },
-      principles: {
-        title: "Pamata principi",
-        items: [
-          "Zināšanas brīvi pieejamas – Nav maksas sienu, nav vārtu sargāšanas",
-          "Kopienas īpašumā – Ieguldītāji saglabā kredītu par savu darbu",
-          "Kļūdu draudzīgs – Kļūdas ir vērtīga mācīšanās",
-          "Sākt vienkārši – Pierādīt, ka tas darbojas, pirms pievienot sarežģītību",
-          "Pašorganizējošs – Nav nepieciešama atļauja koordinācijai ar citiem"
-        ]
-      },
-      footer: {
-        integration: "Daļa no plašākas Communize ekosistēmas, kas pēta uz kopīgumu balstītu noturību.",
-        license: "Zināšanu bāze brīvi koplietota nekomerciālai lietošanai. Ieguldītāji saglabā kredītu."
-      }
-    },
-    lt: {
-      meta: {
-        title: "Baltijos bioregiono sodybų tinklas",
-        description: "Atsinaujinančio gyvenimo žinių bazė Estijoje, Latvijoje ir Lietuvoje"
-      },
-      hero: {
-        title: "Baltijos bioregiono sodybų tinklas",
-        subtitle: "Atsinaujinančio gyvenimo žinios Estijoje, Latvijoje ir Lietuvoje",
-        status: "Atviras bendradarbiams • Gyvas dokumentas • Be biurokratijos"
-      },
-      langSelector: "Kalba:",
-      purpose: {
-        title: "Kodėl tai egzistuoja",
-        intro: "Šimtai Baltijos sodybininkų mokosi bandymų ir klaidų metodu to, ką kiti jau žino. Ši žinių bazė užkerta kelią tokiam švaistymui.",
-        different: "Kas daro tai kitokį:",
-        points: [
-          "Bioregioniškai specifinis – orientuotas į tai, kas veikia Baltijos klimatu ir dirva",
-          "Bendruomenės patvirtintas – kuriamas žmonių su tikra patirtimi",
-          "Įtraukia nesėkmes – dokumentuojame, kas neveikia, ne tik sėkmes",
-          "Realistiški terminai – sąžiningi apie tai, kiek laiko iš tikrųjų užtrunka",
-          "Įgalina koordinavimą – sujungia jus su patyrusia praktikais"
-        ]
-      },
-      status: {
-        current: "Dabartinė būsena:",
-        description: "Savanorių valdomas žinių dalijimasis. Jokios organizacijos, jokio biudžeto, jokios biurokratijos.",
-        future: "Galima ateitis:",
-        futureDesc: "Jei tai pasirodys vertinga: didmeninių pirkimų koordinavimas, įrankių dalijimosi tinklai, integracija su kitais bioregionais arba formalizavimas kaip kooperatyvas. Bet pradedame paprastai."
-      },
-      sections: {
-        title: "Kas viduje",
-        items: [
-          {
-            icon: "🌱",
-            title: "Kas čia veikia",
-            description: "Konkretūs augalų veislės, technikos ir terminai, įrodyti Baltijos klimatu. Suskirstyti pagal šalis (Estija, Latvija, Lietuva)."
-          },
-          {
-            icon: "⚠️",
-            title: "Kas nepavyksta (Svarbu!)",
-            description: "Brangūs pamokymai dokumentuoti, kad jūs jų nekartotumėte. Nepavykę eksperimentai, augalai, kurie neveikia, technikos, kurių reikėtų vengti."
-          },
-          {
-            icon: "📅",
-            title: "Realistiški terminai",
-            description: "1-ų metų prieš 5-ų metų lūkesčiai. Kiek ilgai dirvos kūrimas iš tikrųjų užtrunka. Kada sistemos tampa savaiminio palaikymo."
-          },
-          {
-            icon: "💰",
-            title: "Ekonominės realybės",
-            description: "Sąžiningi skaičiai: pradinė investicija, einamosios išlaidos, atsipirkimo terminai. Kodėl 'ROI' nėra tik finansinis."
-          },
-          {
-            icon: "🤝",
-            title: "Vietiniai praktikai",
-            description: "Susisiekite su patyrusiais sodybininkais, norinčiais mentoriauti. Konkrečios šalies kontaktai ir ekspertizės sritys."
-          },
-          {
-            icon: "🛠️",
-            title: "Ištekliai ir įrankiai",
-            description: "Sėklų šaltiniai, įrankių dalijimosi tinklai, rinkos ir teisinė/reguliacinė aplinka kiekvienai šaliai."
-          }
-        ]
-      },
-      howto: {
-        title: "Kaip naudoti",
-        steps: [
-          "Prieiti prie gyvos žinių bazės (nuoroda žemiau)",
-          "Rasti savo šalies skyrių (Estija, Latvija, Lietuva)",
-          "Skaityti, ką patyrę sodybininkai išmoko",
-          "Susisiekti su bendradarbiais, jei turite klausimų",
-          "Pridėti savo pamokas, kai įgysite patirties"
-        ]
-      },
-      contribute: {
-        title: "Kaip prisidėti",
-        intro: "Tai veikia tik tada, kai praktikai dalijasi tuo, ko išmoko.",
-        steps: [
-          "Prašyti redagavimo prieigos iš koordinatoriaus",
-          "Pridėti savo patirtis atitinkamuose skyriuose",
-          "Būti sąžiningam apie nesėkmes ir iššūkius",
-          "Įtraukti terminus (1-i metai, 3-i metai, 5-i metai)",
-          "Neprivaloma: Pridėti kontaktinę informaciją, jei norite mentorauti"
-        ],
-        what: "Ką prisidėti:",
-        whatList: [
-          "Konkrečios veislės, kurios veikia/nepavyksta",
-          "Dirvos kūrimo technikos ir terminai",
-          "Kenkėjų/ligų valdymo strategijos",
-          "Saugojimo/konservavimo metodai",
-          "Ekonominės realybės (sąžiningi skaičiai)",
-          "Nesėkmės (užkirsti kelią kitiems daryti tas pačias klaidas)"
-        ]
-      },
-      coordinator: {
-        title: "Reikalingas regioninis koordinatorius",
-        status: "Laisva vieta",
-        description: "Šiai žinių bazei reikia kažko, kas kviestų bendradarbius, palaikytų kokybę, jungtų žmones ir skatintų koordinavimą.",
-        commitment: "Laiko įsipareigojimas:",
-        commitmentDetails: "Pradinis: ~10 valandų nustatymui. Einamasis: 2-5 valandos per mėnesį.",
-        why: "Kodėl tai svarbu:",
-        whyDetails: "Šiuo metu šimtai Baltijos sodybininkų kovoja vieni. Koordinatorius padeda išvengti šio švaistymų, jungdamas žmones ir palaikydamas infrastruktūrą savarankiškam organizavimuisi.",
-        benefits: "Kas jums iš to:",
-        benefitsList: [
-          "Vadovauti potencialiai svarbiam tinklui",
-          "Pirmas gauti naudą iš koordinavimo (didmeniniai pirkimai, tarpusavio pagalba)",
-          "Potencialus apmokamas vaidmuo, jei tinklas auga",
-          "Ryšys su platesnėmis atsparumo sistemomis"
-        ],
-        apply: "Domina? Susisiekite su kūrėju žemiau."
-      },
-      cta: {
-        primary: "Prieiti prie žinių bazės",
-        primaryDesc: "Peržiūrėti ir prisidėti prie gyvo dokumento",
-        secondary: "Tapti koordinatoriumi",
-        secondaryDesc: "Vadovauti šiam tinklui"
-      },
-      contact: {
-        title: "Kontaktai ir koordinavimas",
-        creator: "Pradinis kūrėjas:",
-        name: "Björn Kenneth Holmström",
-        role: "Sukūrė šabloną ir struktūrą. Prieinamas techninio palaikymo ir klausimų apie platesnes koordinavimo sistemas.",
-        coordinator: "Regioninis koordinatorius:",
-        coordinatorStatus: "LAISVA VIETA – Kreiptis el. paštu aukščiau"
-      },
-      principles: {
-        title: "Pagrindiniai principai",
-        items: [
-          "Žinios laisvai prieinamos – Jokių mokesčių sienų, jokio vartų saugojimo",
-          "Bendruomenės nuosavybė – Bendradarbiai išlaiko kreditą už savo darbą",
-          "Draugiškos klaidos – Klaidos yra vertingas mokymasis",
-          "Pradėti paprastai – Įrodyti, kad tai veikia, prieš pridedant sudėtingumą",
-          "Saviorganizuojantis – Nereikia leidimo koordinuoti su kitais"
-        ]
-      },
-      footer: {
-        integration: "Dalis platesnės Communize ekosistemos, tiriant bendrais principais pagrįstą atsparumą.",
-        license: "Žinių bazė laisvai dalijama nekomerciniam naudojimui. Bendradarbiai išlaiko kreditą."
-      }
-    }
+    // Placeholder for other languages - all link to English for now
+    et: { /* Same structure, Estonian translations */ },
+    lv: { /* Same structure, Latvian translations */ },
+    lt: { /* Same structure, Lithuanian translations */ }
   };
 
-  const t = $derived(translations[selectedLang]);
+  // For now, all languages show English content
+  const t = $derived(translations.en);
 </script>
 
 <SEO
   title={t.meta.title}
   description={t.meta.description}
-  keywords="Baltic homesteading, permaculture, Estonia, Latvia, Lithuania, bioregional, regenerative agriculture"
+  keywords="Baltic homesteading, permaculture, Estonia, Latvia, Lithuania, bioregional, regenerative agriculture, WWOOF alternative"
 />
 
 <div class="min-h-screen" in:fade>
@@ -590,6 +154,7 @@
             <button
               onclick={() => selectedLang = lang}
               class="px-3 py-1.5 rounded-lg text-sm font-medium transition-all {selectedLang === lang ? 'bg-moss-600 text-white' : 'bg-white text-earth-700 hover:bg-moss-50'}"
+              title={lang === 'en' ? 'English' : lang === 'et' ? 'Eesti' : lang === 'lv' ? 'Latviešu' : 'Lietuvių'}
             >
               {lang === 'en' ? 'EN' : lang === 'et' ? 'EST' : lang === 'lv' ? 'LAT' : 'LIT'}
             </button>
@@ -601,7 +166,7 @@
         {t.hero.title}
       </h1>
       
-      <!-- Bioregional Map -->
+      <!-- Bioregional Map SVG -->
       <div class="max-w-md mx-auto mb-6">
         <svg viewBox="0 0 300 200" class="w-full h-auto opacity-90">
           <!-- Baltic Sea -->
@@ -614,7 +179,7 @@
             stroke-dasharray="3,3"
           />
           
-          <!-- Estonia (northern) -->
+          <!-- Estonia -->
           <path 
             d="M 140 35 L 180 30 L 190 50 L 165 55 L 140 50 Z" 
             fill="#567d56" 
@@ -622,7 +187,7 @@
           />
           <text x="160" y="45" font-size="9" fill="#2d4a2d" font-weight="600" text-anchor="middle">EST</text>
           
-          <!-- Latvia (middle) -->
+          <!-- Latvia -->
           <path 
             d="M 130 60 L 175 58 L 180 90 L 145 92 L 125 80 Z" 
             fill="#567d56" 
@@ -630,61 +195,34 @@
           />
           <text x="150" y="77" font-size="9" fill="#2d4a2d" font-weight="600" text-anchor="middle">LAT</text>
           
-          <!-- Lithuania (southern) -->
+          <!-- Lithuania -->
           <path 
             d="M 115 95 L 155 93 L 160 120 L 130 125 L 110 110 Z" 
             fill="#567d56" 
             fill-opacity="0.4"
           />
           <text x="135" y="110" font-size="9" fill="#2d4a2d" font-weight="600" text-anchor="middle">LIT</text>
-          
-          <!-- Subtle trees/nature symbols -->
-          <g opacity="0.3">
-            <circle cx="70" cy="100" r="2" fill="#567d56"/>
-            <circle cx="75" cy="95" r="2" fill="#567d56"/>
-            <circle cx="80" cy="105" r="2" fill="#567d56"/>
-            <circle cx="220" cy="60" r="2" fill="#567d56"/>
-            <circle cx="225" cy="65" r="2" fill="#567d56"/>
-            <circle cx="215" cy="70" r="2" fill="#567d56"/>
-          </g>
-          
-          <!-- Flowing water lines -->
-          <path 
-            d="M 100 60 Q 110 65, 120 60" 
-            stroke="#567d56" 
-            stroke-width="1" 
-            fill="none" 
-            opacity="0.2"
-          />
-          <path 
-            d="M 180 100 Q 190 105, 200 100" 
-            stroke="#567d56" 
-            stroke-width="1" 
-            fill="none" 
-            opacity="0.2"
-          />
         </svg>
       </div>
       
       <p class="text-xl text-earth-700 mb-4 leading-relaxed">
         {t.hero.subtitle}
       </p>
-      <p class="text-sm text-earth-600 font-medium">
-        {t.hero.status}
+      <p class="text-earth-600 max-w-2xl mx-auto">
+        {t.hero.tagline}
       </p>
     </div>
   </section>
 
-  <!-- Purpose Section -->
+  <!-- Why Bioregional -->
   <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-serif text-earth-900 mb-4">{t.purpose.title}</h2>
+      <h2 class="text-3xl font-serif text-earth-900 mb-6">{t.why.title}</h2>
       <p class="text-lg text-earth-700 mb-6 leading-relaxed">
-        {t.purpose.intro}
+        {t.why.intro}
       </p>
-      <p class="text-earth-800 font-semibold mb-3">{t.purpose.different}</p>
       <ul class="space-y-3">
-        {#each t.purpose.points as point}
+        {#each t.why.points as point}
           <li class="flex items-start">
             <svg class="w-6 h-6 text-moss-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -696,177 +234,121 @@
     </div>
   </section>
 
-  <!-- Status Section -->
-  <section class="py-12 bg-earth-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-lg font-semibold text-earth-900 mb-2">{t.status.current}</h3>
-          <p class="text-earth-700">{t.status.description}</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-earth-900 mb-2">{t.status.future}</h3>
-          <p class="text-earth-700">{t.status.futureDesc}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What's Inside Section -->
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-serif text-earth-900 mb-12 text-center">{t.sections.title}</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {#each t.sections.items as item}
-          <div class="bg-gradient-to-br from-earth-50 to-moss-50 rounded-lg p-6 border border-earth-200">
-            <div class="text-4xl mb-3">{item.icon}</div>
-            <h3 class="text-lg font-semibold text-earth-900 mb-2">{item.title}</h3>
-            <p class="text-sm text-earth-700">{item.description}</p>
+  <!-- How It Works -->
+  <section class="py-16 bg-gradient-to-br from-moss-50 to-earth-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-serif text-earth-900 mb-12 text-center">{t.how.title}</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {#each t.how.steps as step, i}
+          <div class="text-center">
+            <div class="text-5xl mb-4">{step.icon}</div>
+            <div class="inline-block px-4 py-1 bg-moss-600 text-white rounded-full text-sm font-semibold mb-4">
+              Step {i + 1}
+            </div>
+            <h3 class="text-xl font-semibold text-earth-900 mb-3">{step.title}</h3>
+            <p class="text-earth-700">{step.description}</p>
           </div>
         {/each}
       </div>
     </div>
   </section>
 
-  <!-- How To Use -->
-  <section class="py-12 bg-moss-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-2xl font-serif text-earth-900 mb-6">{t.howto.title}</h2>
-      <ol class="space-y-3">
-        {#each t.howto.steps as step, i}
-          <li class="flex items-start">
-            <span class="flex-shrink-0 w-8 h-8 bg-moss-600 text-white rounded-full flex items-center justify-center font-semibold text-sm mr-3">
-              {i + 1}
-            </span>
-            <span class="text-earth-700 pt-1">{step}</span>
-          </li>
-        {/each}
-      </ol>
-    </div>
-  </section>
-
-  <!-- Main CTAs -->
-  <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- Primary CTA -->
+  <!-- Join the Network (Main CTA) -->
+  <section class="py-20 bg-gradient-to-br from-moss-600 to-moss-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-serif mb-4">{t.join.title}</h2>
+      <p class="text-lg mb-8 opacity-95">
+        {t.join.description}
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
         <a 
-          href="https://docs.google.com/document/d/1SD9YgSk7WldlMCMwrU3JuDH3_I0o_3sOrsh_MN560-o/edit"
+          href="https://airtable.com/appO2W0t9LlEmW7Nr/pagC6JZgNgB1pii12/form"
           target="_blank"
           rel="noopener noreferrer"
-          class="group block bg-gradient-to-br from-moss-600 to-moss-700 rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all border-2 border-moss-500"
+          class="inline-flex items-center justify-center px-8 py-4 bg-white text-moss-700 rounded-lg hover:bg-moss-50 transition-colors font-semibold shadow-lg text-lg"
         >
-          <div class="flex items-center gap-3 mb-3">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            <h3 class="text-2xl font-serif text-white">{t.cta.primary}</h3>
-          </div>
-          <p class="text-moss-100 mb-4">{t.cta.primaryDesc}</p>
-          <div class="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform">
-            <span>Open document</span>
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </div>
+          📋 {t.join.formButton}
         </a>
-
-        <!-- Secondary CTA -->
+        
         <a 
-          href="mailto:bjorn.kenneth.holmstrom@gmail.com?subject=Baltic Bioregional Coordinator Application"
-          class="group block bg-gradient-to-br from-earth-100 to-earth-200 rounded-xl p-8 hover:shadow-xl transition-all border-2 border-earth-300"
+          href="mailto:bjorn.kenneth.holmstrom@gmail.com?subject=Baltic Homesteading Network Profile"
+          class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-moss-600 transition-colors font-semibold"
         >
-          <div class="flex items-center gap-3 mb-3">
-            <svg class="w-8 h-8 text-earth-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-            <h3 class="text-2xl font-serif text-earth-900">{t.cta.secondary}</h3>
-          </div>
-          <p class="text-earth-700 mb-4">{t.cta.secondaryDesc}</p>
-          <div class="flex items-center text-earth-800 font-semibold group-hover:translate-x-2 transition-transform">
-            <span>Apply now</span>
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </div>
+          ✉️ {t.join.emailButton}
         </a>
       </div>
+      
+      <p class="text-sm opacity-90">
+        {t.join.note}
+      </p>
     </div>
   </section>
 
-  <!-- Coordinator Section -->
-  <section class="py-16 bg-gradient-to-br from-earth-50 to-clay-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="flex items-center gap-3 mb-6">
-        <h2 class="text-3xl font-serif text-earth-900">{t.coordinator.title}</h2>
-        <span class="px-4 py-1.5 bg-moss-100 text-moss-700 rounded-full text-sm font-semibold">
-          {t.coordinator.status}
-        </span>
-      </div>
-      
-      <p class="text-lg text-earth-700 mb-6">{t.coordinator.description}</p>
-      
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div>
-          <h3 class="font-semibold text-earth-900 mb-2">{t.coordinator.commitment}</h3>
-          <p class="text-earth-700 text-sm">{t.coordinator.commitmentDetails}</p>
-        </div>
-        <div>
-          <h3 class="font-semibold text-earth-900 mb-2">{t.coordinator.why}</h3>
-          <p class="text-earth-700 text-sm">{t.coordinator.whyDetails}</p>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-earth-900 mb-3">{t.coordinator.benefits}</h3>
-        <ul class="space-y-2">
-          {#each t.coordinator.benefitsList as benefit}
-            <li class="flex items-start text-sm">
-              <svg class="w-5 h-5 text-moss-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-earth-700">{benefit}</span>
-            </li>
-          {/each}
-        </ul>
-      </div>
-
-      <p class="mt-6 text-earth-700 font-medium">{t.coordinator.apply}</p>
-    </div>
-  </section>
-
-  <!-- Contribute Section -->
+  <!-- What You'll Find -->
   <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-serif text-earth-900 mb-4">{t.contribute.title}</h2>
-      <p class="text-lg text-earth-700 mb-6">{t.contribute.intro}</p>
+      <h2 class="text-3xl font-serif text-earth-900 mb-6">{t.profiles.title}</h2>
+      <p class="text-earth-700 mb-4">{t.profiles.intro}</p>
+      <ul class="space-y-2 mb-6">
+        {#each t.profiles.items as item}
+          <li class="flex items-start">
+            <span class="text-moss-600 mr-3">•</span>
+            <span class="text-earth-700">{item}</span>
+          </li>
+        {/each}
+      </ul>
+      <p class="text-sm text-earth-600 italic">
+        {t.profiles.examples}
+      </p>
+    </div>
+  </section>
+
+  <!-- WWOOF Comparison -->
+  <section class="py-16 bg-earth-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-serif text-earth-900 mb-6">{t.wwoof.title}</h2>
+      <p class="text-earth-700 mb-8">{t.wwoof.intro}</p>
       
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="font-semibold text-earth-900 mb-3">Steps:</h3>
-          <ol class="space-y-2">
-            {#each t.contribute.steps as step, i}
-              <li class="flex items-start text-sm">
-                <span class="flex-shrink-0 w-6 h-6 bg-earth-200 text-earth-800 rounded-full flex items-center justify-center font-semibold text-xs mr-2">
-                  {i + 1}
-                </span>
-                <span class="text-earth-700 pt-0.5">{step}</span>
-              </li>
-            {/each}
-          </ol>
-        </div>
-        <div>
-          <h3 class="font-semibold text-earth-900 mb-3">{t.contribute.what}</h3>
-          <ul class="space-y-2">
-            {#each t.contribute.whatList as item}
-              <li class="flex items-start text-sm">
-                <span class="text-moss-600 mr-2">•</span>
-                <span class="text-earth-700">{item}</span>
-              </li>
-            {/each}
-          </ul>
-        </div>
+      <div class="space-y-4 mb-8">
+        {#each t.wwoof.differences as diff}
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="p-4 bg-white rounded-lg border-2 border-earth-200">
+              <div class="text-sm text-earth-600 mb-1">WWOOF</div>
+              <div class="text-earth-800">{diff.wwoof}</div>
+            </div>
+            <div class="p-4 bg-moss-50 rounded-lg border-2 border-moss-300">
+              <div class="text-sm text-moss-700 mb-1">Baltic Network</div>
+              <div class="text-earth-900 font-medium">{diff.baltic}</div>
+            </div>
+          </div>
+        {/each}
       </div>
+      
+      <p class="text-earth-700 bg-moss-50 p-6 rounded-lg border-l-4 border-moss-500">
+        <strong>Not competitors, complements.</strong> {t.wwoof.complement}
+      </p>
+    </div>
+  </section>
+
+  <!-- Map Preview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-serif text-earth-900 mb-6">{t.map.title}</h2>
+      <p class="text-earth-700 mb-4">{t.map.description}</p>
+      <ul class="space-y-2 mb-6">
+        {#each t.map.features as feature}
+          <li class="flex items-start">
+            <svg class="w-5 h-5 text-moss-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-earth-700">{feature}</span>
+          </li>
+        {/each}
+      </ul>
+      <p class="text-moss-700 font-semibold">
+        {t.map.timeline}
+      </p>
     </div>
   </section>
 
@@ -887,26 +369,22 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="py-16 bg-white border-t-2 border-earth-200">
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-3xl font-serif text-earth-900 mb-8">{t.contact.title}</h2>
       
-      <div class="space-y-6">
-        <div class="border-l-4 border-moss-400 pl-6">
-          <h3 class="font-semibold text-earth-900 mb-1">{t.contact.creator}</h3>
-          <p class="text-lg text-earth-800 mb-2">{t.contact.name}</p>
-          <p class="text-sm text-earth-700 mb-3">{t.contact.role}</p>
-          <a href="/cdn-cgi/l/email-protection#26444c495448084d43484843524e084e494a4b555254494b66414b474f4a0845494b" class="text-moss-600 hover:text-moss-700 font-medium text-sm border-b border-moss-300 hover:border-moss-500">
-            <span class="__cf_email__" data-cfemail="6301090c110d4d08060d0d06170b4d0b0c0f0e1017110c0e23040e020a0f4d000c0e">[email&#160;protected]</span>
+      <div class="border-l-4 border-moss-400 pl-6">
+        <p class="text-sm text-earth-600 mb-1">{t.contact.creator}</p>
+        <p class="text-lg text-earth-800 font-semibold mb-2">{t.contact.name}</p>
+        <p class="text-sm text-earth-700 mb-3">{t.contact.role}</p>
+        <div class="flex items-center gap-2 text-sm">
+          <span class="text-earth-600">{t.contact.email}</span>
+          <a href="mailto:bjorn.kenneth.holmstrom@gmail.com" class="text-moss-600 hover:text-moss-700 font-medium border-b border-moss-300 hover:border-moss-500">
+            bjorn.kenneth.holmstrom@gmail.com
           </a>
         </div>
-
-
-        <div class="border-l-4 border-earth-400 pl-6">
-          <h3 class="font-semibold text-earth-900 mb-1">{t.contact.coordinator}</h3>
-          <p class="text-earth-700 text-sm">{t.contact.coordinatorStatus}</p>
-        </div>
+        <p class="text-xs text-earth-600 mt-2 italic">{t.contact.note}</p>
       </div>
     </div>
   </section>
@@ -915,7 +393,7 @@
   <section class="py-12 bg-earth-900 text-earth-100">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <p class="mb-3">{t.footer.integration}</p>
-      <p class="text-sm text-earth-300">{t.footer.license}</p>
+      <p class="text-sm text-earth-300 mb-6">{t.footer.license}</p>
       <div class="mt-6">
         <a href="{base}/" class="text-moss-400 hover:text-moss-300 text-sm border-b border-moss-600 hover:border-moss-400">
           ← Back to Communize
