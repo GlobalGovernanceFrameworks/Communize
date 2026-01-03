@@ -17,10 +17,10 @@
       translationLang = lang === 'et' ? 'Estonian' : lang === 'lv' ? 'Latvian' : 'Lithuanian';
       showTranslationHelp = true;
       
-      // Auto-hide after 8 seconds
+      // Auto-hide after 10 seconds
       setTimeout(() => {
         showTranslationHelp = false;
-      }, 8000);
+      }, 10000);
     }
   }
   
