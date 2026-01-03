@@ -5,6 +5,24 @@
   import SEO from '$lib/components/SEO.svelte';
   
   let selectedLang = $state('en');
+  let showTranslationHelp = $state(false);
+  let translationLang = $state('');
+
+  function handleLanguageClick(lang: string) {
+    if (lang === 'en') {
+      selectedLang = lang;
+      showTranslationHelp = false;
+    } else {
+      // Not yet translated - show help message
+      translationLang = lang === 'et' ? 'Estonian' : lang === 'lv' ? 'Latvian' : 'Lithuanian';
+      showTranslationHelp = true;
+      
+      // Auto-hide after 8 seconds
+      setTimeout(() => {
+        showTranslationHelp = false;
+      }, 8000);
+    }
+  }
   
   const translations = {
     en: {
@@ -152,7 +170,7 @@
         <div class="flex gap-2">
           {#each ['en', 'et', 'lv', 'lt'] as lang}
             <button
-              onclick={() => selectedLang = lang}
+              onclick={() => handleLanguageClick(lang)}
               class="px-3 py-1.5 rounded-lg text-sm font-medium transition-all {selectedLang === lang ? 'bg-moss-600 text-white' : 'bg-white text-earth-700 hover:bg-moss-50'}"
               title={lang === 'en' ? 'English' : lang === 'et' ? 'Eesti' : lang === 'lv' ? 'Latviešu' : 'Lietuvių'}
             >
@@ -161,6 +179,39 @@
           {/each}
         </div>
       </div>
+
+      <!-- Translation Help Message -->
+      {#if showTranslationHelp}
+        <div 
+          class="max-w-2xl mx-auto mb-6 p-4 bg-moss-50 border-2 border-moss-300 rounded-lg"
+          transition:fade
+        >
+          <div class="flex items-start gap-3">
+            <div class="text-2xl">🌍</div>
+            <div class="flex-1">
+              <p class="text-earth-900 font-semibold mb-1">
+                {translationLang} translation coming soon
+              </p>
+              <p class="text-sm text-earth-700 mb-2">
+                Native {translationLang} speaker? Help us translate this page! It takes about 30 minutes and makes the network accessible to your community.
+              </p>
+              <a 
+                href="mailto:bjorn.kenneth.holmstrom@gmail.com?subject=Baltic Network {translationLang} Translation"
+                class="text-sm text-moss-600 hover:text-moss-700 font-medium border-b border-moss-300 hover:border-moss-500"
+              >
+                Email to volunteer →
+              </a>
+            </div>
+            <button
+              onclick={() => showTranslationHelp = false}
+              class="text-earth-500 hover:text-earth-700 transition-colors"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      {/if}
 
       <h1 class="text-4xl md:text-5xl font-serif text-earth-900 mb-4 leading-tight">
         {t.hero.title}
